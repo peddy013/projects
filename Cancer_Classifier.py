@@ -20,4 +20,4 @@ print(cancer_df.describe())#dataset summary
 cancer_df['target'] = cancer_data.target
 X = cancer_df.drop(['target'],axis=1)
 Y = cancer_df['target']
-X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=0.15,random_state=417)
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.15,random_state=417)
